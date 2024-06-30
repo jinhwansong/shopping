@@ -1,0 +1,11 @@
+export { default as IcLogo } from "./logo.svg";
+export { default as IcGoogle } from "./google.svg";
+export { default as IcKakao } from "./kakao.svg";
+export { default as IcNaver } from "./naver.svg";
+export { default as IcBanner } from "./banner.webp";
+export { default as IcNotfound } from "./notfound.svg";
+export { default as IcSell } from "./sell.png";
+export { default as IcSlide01 } from "./slide01.webp";
+export { default as IcSlide02 } from "./slide02.webp";
+export { default as IcSlide03 } from "./slide03.webp";
+export { default as IcSlide04 } from "./slide04.webp";

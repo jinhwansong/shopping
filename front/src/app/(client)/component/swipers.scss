@@ -1,0 +1,38 @@
+.searchBest .swiper {
+    margin-left: 0;
+    margin-right: 0;
+}
+.mainslide {
+    padding-bottom: 3rem;
+    
+    >.swiper-pagination{
+        bottom: 0rem;
+         .swiper-pagination-bullet{
+        width: 4px;
+        height: 4px;
+        background: hsla(0, 4%, 5%, .16);
+        margin: 0 2px !important;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active{
+        width: 2.4rem;
+        border-radius: 0.2rem;
+        background:var(--major-main);
+    }
+    }
+}
+.itemSlide{
+    padding-bottom: 4rem;
+    .swiper-pagination-bullet{
+        width: 4px;
+        height: 4px;
+        background: hsla(0, 4%, 5%, .16);
+        margin: 0 2px !important;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active{
+        width: 2.4rem;
+        border-radius: 0.2rem;
+        background:var(--major-main);
+    }
+}

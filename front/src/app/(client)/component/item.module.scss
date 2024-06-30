@@ -1,0 +1,40 @@
+.imgBox{
+    border-radius: 1rem;
+    overflow: hidden;
+     > img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    margin-bottom: 2rem;
+}
+.textBox{
+    > strong{
+        font-size:1.6rem;
+        font-weight: 600;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        display: block;
+    }
+    > em{
+        font-size:1.4rem;
+        font-weight: 600;
+        display: block;
+        margin-block: 1rem 0.8rem;
+        line-height: 1;
+    }
+    > p{
+        font-size: 1.4rem;
+        color:var(--text-subTitle);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        > span:first-child{
+            border-right: var(--border-main);
+            padding-right: 1rem;
+        }
+    }
+}

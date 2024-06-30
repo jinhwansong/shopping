@@ -1,0 +1,58 @@
+.section{
+    position:relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.navi{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-inline: 1rem;
+    > button{
+        font-size: 4rem;
+        color: var(--bg-main);
+    }
+}
+.swiper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+    display: block;
+    position: relative;
+}
+
+.swiperImg{
+    > img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+.swiperText{
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    >em{
+        display: block;
+        line-height: 1.2;
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--text-white);
+
+    }
+    > p{
+        display: block;
+        line-height: 1;
+        font-size: 1.6rem;
+        margin-top: 1.5rem;
+        font-weight: 500;
+        color: var(--text-white);
+    }
+}
