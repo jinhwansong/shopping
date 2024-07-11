@@ -14,3 +14,9 @@ export interface ICategory {
     }[];
   }[];
 }
+
+export interface IuseCheck  {
+  id: string;
+  checks: string;
+  name: string;
+};

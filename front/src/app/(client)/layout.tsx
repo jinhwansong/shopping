@@ -1,13 +1,10 @@
-import type { Metadata } from "next";
-import Header from "./component/Header";
+import React from "react";
+import Header from "./_component/Header";
+import Footer from "./_component/Footer";
 import "swiper/swiper-bundle.css";
 import "swiper/css/pagination";
-
-export const metadata: Metadata = {
-  title: "트렌드셀러",
-  description: "트렌드셀러에 오신것을 환영합니다.",
-};
-
+import style from "./main.module.scss";
+import { RQProvider } from "@/hooks";
 export default function layout({
   children,
   modal,
@@ -16,12 +13,13 @@ export default function layout({
   modal: React.ReactNode;
 }) {
   return (
-    <>
+    <RQProvider>
       <Header />
-      <div>
+      <div className={style.main}>
         {children}
         {modal}
       </div>
-    </>
+      <Footer />
+    </RQProvider>
   );
-};
+}

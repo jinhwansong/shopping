@@ -1,0 +1,19 @@
+.button{
+  width: 100%;
+  font-size: 1.4rem;
+  height:4rem;
+  border-radius:0.5rem;
+  background:var(--major-main);
+  color:var(--text-white);
+  &:disabled{
+    background: var(--bg-second);
+    color:var(--text-title);
+  }
+}
+
+.width100{
+  width: 10rem;
+}
+.height50{
+    height: 5rem;
+}

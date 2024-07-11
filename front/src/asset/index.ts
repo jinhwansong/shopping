@@ -9,3 +9,5 @@ export { default as IcSlide01 } from "./slide01.webp";
 export { default as IcSlide02 } from "./slide02.webp";
 export { default as IcSlide03 } from "./slide03.webp";
 export { default as IcSlide04 } from "./slide04.webp";
+export { default as IcCheck } from "./check.svg";
+;

@@ -8,8 +8,10 @@
   --text-white: #fff;
   --text-red: #FE2C55;
   --text-9094A8:#9094A8;
+  --text-7a7a7a:#7a7a7a;
     /* background(common) */
   --bg-main: #fff;
+  --bg-ddd: #ddd;
   --bg-second: #fafafa;
   --bg-03:#030303;
   --bg-F1F4F6:#F1F4F6;
@@ -18,11 +20,13 @@
   --bg-f5f6f7:#f5f6f7;
   --bg-373d40:#373d40;
   --bg-e6e6e6:#e6e6e6;
+  --bg-f5f5f5:#f5f5f5;
     /* border(common) */
   --border-main: 1px solid #ddd  ;
   --border-sub: 1px solid #F72F08  ;
   --border-F1F4F6: 1px solid #F1F4F6  ;
   --border-f5f6f7:1px solid #f5f6f7;
+  --border-3d3d3d:1px solid #3d3d3d;
 }
 @media (prefers-color-scheme: dark) {
   :root{
@@ -72,7 +76,7 @@ em,strong,p,h1,h2,h3,h4,h5,h6,a{
 button{
   cursor: pointer;
 }
-ol, ul {
+ol, ul,li {
 	list-style: none;
 }
 blockquote, q {
@@ -86,4 +90,17 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox  */
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance:textfield
 }

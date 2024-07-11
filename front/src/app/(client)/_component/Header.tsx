@@ -32,11 +32,7 @@ export default function Header() {
       {/* 배너 */}
       <div className={style.banner}>
         <Link href="/">
-          <Image
-            src={IcBanner}
-            alt="banner"
-            quality={100}
-          />
+          <Image src={IcBanner} alt="banner" quality={100} />
         </Link>
       </div>
       <div className={style.headerOther}>
@@ -54,7 +50,7 @@ export default function Header() {
                 type="text"
                 placeholder="어떤 상품을 찾으시나요?"
                 value={search}
-                onchange={changeSearch}
+                onChange={changeSearch}
                 name="search"
                 bg="search"
               />
@@ -99,7 +95,7 @@ export default function Header() {
               <BiBell />
               알림
             </button>
-            <Link href="/chat" data-tip="채팅" className={style.buttons}>
+            <Link href="/messages" data-tip="채팅" className={style.buttons}>
               <BiChat />
               채팅
             </Link>

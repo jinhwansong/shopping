@@ -1,0 +1,12 @@
+.section{
+    width: 35rem;
+    margin: 0 auto;
+    padding-block:  8rem;
+    text-align: center;
+    > p {
+        font-size: 1.6rem;
+        margin-block: 1rem 3rem;
+        font-weight: 600;
+        color: var(--major-main);
+    }
+}

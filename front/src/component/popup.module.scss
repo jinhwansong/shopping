@@ -1,0 +1,45 @@
+.popwrap{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+.popbox{
+  padding: 2.5rem;
+  margin: auto;
+  width: 35rem ;
+  background: var(--color-white);
+  border-radius: 5px;
+  text-align: right;
+} 
+.close{
+  font-size: 0;
+  > svg {
+    font-size: 2rem;
+  }
+}
+
+.popbg{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+.title{
+  font-size: 2rem;
+  color: var(--color-black);
+  line-height: 1;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}

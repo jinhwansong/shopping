@@ -1,0 +1,38 @@
+.popupWrap{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popupBg{
+    background:rgba(0,0,0,0.7);
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    cursor: pointer;
+    z-index: -1;
+}
+.popup{
+    background: var(--bg-main);
+    width: 40rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.popupTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    > button{
+        font-size: 2rem;
+    }
+    margin-bottom: 2rem;
+}
+
+    

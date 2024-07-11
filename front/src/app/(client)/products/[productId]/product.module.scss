@@ -1,0 +1,151 @@
+@mixin flex($gap:2rem) {
+  display: flex;
+  align-items: center;
+  
+  gap: $gap;
+}
+
+
+.productContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8rem;
+}
+.productImage{
+  width: 50%;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  font-size: 0;
+  position: sticky;
+  top: 24rem;
+  z-index: 99;
+}
+
+
+/* 팔로우 */
+
+.follower{
+    padding-block: 2rem;
+    background:var(--color-bg-f7f7f7);
+    justify-content: center;
+    @include flex();
+    margin-block: 5rem;
+    > a{
+      justify-content: center;
+      @include flex();
+    }
+}
+.imagebox{
+    width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+    padding: 0;
+  }
+}
+.textbox{
+    > h6 {
+    color:var(--color-black);
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  > p {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* 상세 정보 */
+.detail{
+    flex: 1 1 0;
+}
+
+
+.status{
+    font-size: 1rem;
+  padding: 8px 10px;
+  border-radius: 5px;
+  line-height: 1;
+  color: var(--color-orange);
+  border: 1px solid var(--color-orange);
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.title{
+    word-break: break-all;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: var(--color-black);
+  width: 100%;
+}
+.price{
+    color:  var(--color-black);
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+.description{
+     font-size: 1.2rem;
+  margin-top: 1.5rem;
+  letter-spacing: -0.2px;
+  color:  var(--color-gery);
+}
+.shopping{
+    margin-top: 3rem;
+    >h5{
+        letter-spacing: -0.2px;
+        font-weight: 700;
+        font-size: 1.6rem;
+        color: var(--color-black);
+        margin-bottom: 1rem;
+    }
+    > p{
+        letter-spacing: -0.2px;
+        font-size: 1.4rem;
+        color: var(--color-gery);
+    }
+}
+
+.location{
+  line-height: 1;
+  @include flex(0.5rem);
+  a,
+  svg {
+    font-size: 1.4rem;
+    color: var(--color-gery);
+  }
+  > a:last-child {
+    color:var(--color-black); 
+  }
+}   
+
+.important{
+    margin-top: 1rem;
+  font-size: 1.2rem;
+  @include flex(0rem);
+  color: var(--color-gery);
+  line-height: 2rem;
+  > span {
+    font-weight: 700;
+    margin-left: 0.5rem;
+    color: var(--color-black);
+  }
+  > svg {
+    font-size: 1.6rem;
+  }
+}
+
+
+.shoppingbtn{
+  @include flex(1rem);
+  margin-top: 3rem;
+
+}

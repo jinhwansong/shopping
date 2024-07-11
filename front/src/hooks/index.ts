@@ -2,3 +2,8 @@ export { default as useArray } from "./useArray"
 export { default as useInput } from "./useInput";
 export { default as useSlide } from "./useSlide";
 export { default as useTime } from "./useTime";
+export { default as useVaild } from "./useVaild";
+export { default as useCheck } from "./useCheck";
+export { default as useTag } from "./useTag";
+export { default as useNumber } from "./useNumber";
+export { default as RQProvider } from "./useRQProvider";

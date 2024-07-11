@@ -1,0 +1,200 @@
+
+@mixin scrolling {
+    &::-webkit-scrollbar {
+        width: 4px; 
+        height: 4px;
+        padding-right: 2px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--color-bg-bar);
+        border-radius: 10px;
+    }
+};
+
+.title{
+    padding-bottom:1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid var(--color-bg-footer);
+    align-items: flex-end;
+    > h2{
+        font-size:2rem;
+        color:var(--color-black);
+        font-weight:600;
+        line-height: 1;
+    }
+    > p{
+        font-size:1.2rem;
+        line-height: 1;
+        font-weight:500;
+        > span{
+            color:var(--color-orange);
+        }
+    }
+}
+.list{
+    padding-block: 2rem;
+    display: flex;
+    border-bottom:1px solid var(--color-border-ddd);
+    >em{
+        width:24rem;
+        font-size:1.4rem;
+        font-weight:600;
+        color: var(--color-black);
+        >span{
+            color:var(--color-orange);
+        }
+    }
+    > input, .label, .category,.textarea,.pay,.delivery,.tag{
+        flex:1;
+    }
+}
+.label{
+    cursor: pointer;
+    >img{
+        width:20rem;
+        height:20rem;
+    }
+    >input{
+        display: none;
+    }
+}
+.category{
+    width: 100%;
+    border: 1px solid var(--color-border-ddd);
+    border-radius: 0.5rem;
+    height: 25rem;
+    background:var(--color-white);
+    padding:2rem;
+    display: flex;
+    gap:2rem;
+    >div{
+        flex:1;
+        overflow-y: scroll;
+        @include scrolling;
+        &:first-child{
+            border-right: 1px solid var(--color-border-ddd);
+        }
+        >button{
+            margin-top:1.3rem;
+            line-height: 1;
+            color: var(--color-black);
+            width: 100%;
+            display:block;
+            text-align:left;
+            &:first-child{
+                margin-top:0rem;
+            }
+        }
+
+    }
+}
+.textarea{
+    width: 100%;
+    font-size: 1.4rem;
+    height:20rem;
+    border:1px solid var(--color-border-ddd);
+    padding: 13px 12px;
+    border-radius: 5px;
+    outline: 0;
+    resize: none;
+    &:focus{
+        border:1px solid var(--color-orange);
+    }
+}
+.pay{
+    >input{
+        width:30rem;
+        text-align: right;
+        margin:0;
+    }
+    >span{
+        font-size:1.4rem;
+        font-weight: 500;
+        margin-left:1rem;
+        color: var(--color-black);
+    }
+}
+.deliverys{
+    margin-top:1rem;
+}
+.direct {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.tag{
+    > div{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-top:0.5rem;
+    }
+    span{
+        font-size: 1.4rem;
+        background: #f7f7f7;
+        padding: 1rem 1.5rem;
+        border-radius: 1rem;
+    }
+    button{
+        margin-left: 1rem;
+        background: #666;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 1.2rem;
+        border-radius: 50%;
+        color: #fff;
+    }
+
+}
+
+
+.inputwrap{
+    position:relative;
+    >button{
+        font-size: 2rem;
+        color: var(--color-gery);
+        position: absolute;
+        right: 1.2rem;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        cursor: pointer;
+        line-height: 5rem;
+    }
+}
+
+
+.searchMap{
+    @include scrolling;
+    height: 25rem;
+    margin-block: 2rem 0;
+    overflow-y: scroll;
+    > p {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--color-black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    >button{
+        width: 100%;
+        padding: 0rem 1.5rem;
+        display: block;
+        height: 4rem;
+        color: var(--color-black);
+        font-size: 1.4rem;
+        text-align: left;
+        &:hover{
+            background: var(--color-bg-f7f7f7);
+        }
+    }
+}

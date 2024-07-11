@@ -6,6 +6,8 @@
     font-size: 1.4rem;
     padding-inline: 1.5rem;
     letter-spacing: -0.3px;
+    -moz-appearance: textfield;
+  appearance: textfield;
 }
 .bgsearch{
     background:var(--bg-F1F4F6);
@@ -17,4 +19,7 @@
 }
 .input:focus{
     border:var(--border-sub);
+}
+.height50{
+    height: 5rem;
 }

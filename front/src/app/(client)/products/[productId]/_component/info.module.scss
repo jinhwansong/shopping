@@ -1,0 +1,24 @@
+.shoppinginfo{
+    margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: var(--color-bg-f7f7f7);
+  > svg {
+    font-size: 2.5rem;
+  }
+  > em {
+    letter-spacing: -0.2px;
+    font-size: 1.4rem;
+    color:var(--color-black);
+    font-weight: 700;
+    width: 5rem;
+  }
+  > p {
+    letter-spacing: -0.2px;
+    font-size: 1.4rem;
+    color: var(--color-black);
+  }
+}

@@ -1,0 +1,33 @@
+.social{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > hr {
+    position: relative;
+    bottom: -8px;
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--bg-ddd);
+    border: none;
+  }
+  > span {
+    font-size: 1.2rem;
+    background: var(--bg-main);
+    padding: 0 8px;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  > div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  > div > button {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
